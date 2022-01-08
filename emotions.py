@@ -5,7 +5,7 @@ import random
 # ---------- Engine Creation --------------
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[1].id)
+engine.setProperty('voice', voices[2].id)
 engine.setProperty("rate", 145)
 
 
