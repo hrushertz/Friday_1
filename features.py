@@ -167,6 +167,8 @@ def highlights():
             print("-" * 50)
             print("title-- ", x['title'])
             speak(x['title'])
+
+        speak("and, that's it for now, wish you a good day!!")
     except Exception as error:
         print(error)
 
@@ -246,7 +248,7 @@ def breaker():
 
 def flip():
     try:
-        coin = {1: "it's a head.", 2: "it's a tail.", 3: "oops!, sorry but i lost the coin, haha"}
+        coin = {1: "and, it's a head.", 2: "that's a tail.", 3: "oops!, sorry but i lost the coin, haha"}
         face = random.randint(1, 3)
         chance = coin[face]
         if face == 3:
@@ -256,4 +258,3 @@ def flip():
             speak(chance)
     except Exception as error:
         print(error)
-

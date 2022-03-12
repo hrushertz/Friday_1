@@ -70,17 +70,10 @@ def greeting():
         num = random.randint(1, 5)
         word = lang[num]
         speak(word)
+        print(word)
     except Exception as error:
         print(error)
 
 
-def trigger():
-    try:
-        mood = {1:"bossDK!!apna kaam karna.", 2:"GANDU!!", 3: "bar wah", 4: "chuti yey", 5: "lodu lallit", 6: "harami saala", 7: "madar choood saala"}
-        num = random.randint(1, 7)
-        entry = mood[num]
-        print(entry)
-        speak(entry)
-    except Exception as error:
-        print(error)
+
 

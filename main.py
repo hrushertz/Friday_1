@@ -2,6 +2,7 @@ import pyttsx3
 import speech_recognition as sr
 from emotions import wishMe, initiate, sad, happy, mood
 from features import wiki, playonyt, whois, time, easter01, location, temperature, write, read, news, highlights, weather, calculator, breaker, newsSound, coinSound, flip
+from mapmaker import myMap
 
 # ---------- Engine Creation --------------
 engine = pyttsx3.init()
@@ -98,6 +99,9 @@ def taskExecution():
         if "flip a coin" in query:
             coinSound()
             flip()
+
+        if "map" in query:
+            myMap()
 
         else:
             #speak("i am not sure about that..")
