@@ -1,6 +1,6 @@
 import pyttsx3
 import speech_recognition as sr
-from emotions import wishMe, initiate, sad, happy, mood
+from emotions import wishMe, initiate, sad, happy, mood, mapVoice
 from features import wiki, playonyt, whois, time, easter01, location, temperature, write, read, news, highlights, weather, calculator, breaker, newsSound, coinSound, flip
 from mapmaker import myMap
 
@@ -101,6 +101,7 @@ def taskExecution():
             flip()
 
         if "map" in query:
+            mapVoice()
             myMap()
 
         else:

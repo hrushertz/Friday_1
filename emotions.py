@@ -53,6 +53,9 @@ def happy():
     except Exception as error:
         print(error)
 
+def mapVoice():
+    speak("Okay checking !")
+    speak("Currently theres some issue finding your exact location, but i am showing your approx location.")
 
 def mood():
     try:
